@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 4, from LayoutIt!</title>
+
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Siloker</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda+One">
+	<script src="js/scripts.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<style>
+body {
+	background:#eeee;
+	font-family: 'Varela Round', sans-serif;
+}
+.navbar .navbar-brand b {
+	color: #33cabb;		
+}
+.form-inline {
+	display: inline-block;
+}
+.navbar-header.col {
+	padding: 0 !important;
+}
+.navbar {		
+	background: #fff;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-bottom: 1px solid #d6d6d6;
+	box-shadow: 0 0 4px rgba(0,0,0,.1);
+}
+.nav-link img {
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	margin: -8px 0;
+	float: left;
+	margin-right: 10px;
+}
+.navbar .navbar-brand {
+	color: #555;
+	padding-left: 0;
+	padding-right: 50px;
+	font-family: 'Merienda One', sans-serif;
+}
+.navbar .navbar-brand i {
+	font-size: 20px;
+	margin-right: 5px;
+}
+.search-box {
+	position: relative;
+}	
+.search-box input {
+	box-shadow: none;
+	padding-right: 35px;
+	border-radius: 3px !important;
+}
+.search-box .input-group-addon {
+	min-width: 35px;
+	border: none;
+	background: transparent;
+	position: absolute;
+	right: 0;
+	z-index: 9;
+	padding: 7px;
+	height: 100%;
+}
+.search-box i {
+	color: #a0a5b1;
+	font-size: 19px;
+}
+.navbar .nav-item i {
+	font-size: 18px;
+}
+.navbar .dropdown-item i {
+	font-size: 16px;
+	min-width: 22px;
+}
+.navbar .nav-item.open > a {
+	background: none !important;
+}
+.navbar .dropdown-menu {
+	border-radius: 1px;
+	border-color: #e5e5e5;
+	box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.navbar .dropdown-menu a {
+	color: #777;
+	padding: 8px 20px;
+	line-height: normal;
+}
+.navbar .dropdown-menu a:hover, .navbar .dropdown-menu a:active {
+	color: #333;
+}	
+.navbar .dropdown-item .material-icons {
+	font-size: 21px;
+	line-height: 16px;
+	vertical-align: middle;
+	margin-top: -2px;
+}
+.navbar .badge {
+	color: #fff;
+	background: #f44336;
+	font-size: 11px;
+	border-radius: 20px;
+	position: absolute;
+	min-width: 10px;
+	padding: 4px 6px 0;
+	min-height: 18px;
+	top: 5px;
+}
+.navbar a.notifications, .navbar a.messages {
+	position: relative;
+	margin-right: 10px;
+}
+.navbar a.messages {
+	margin-right: 20px;
+}
+.navbar a.notifications .badge {
+	margin-left: -8px;
+}
+.navbar a.messages .badge {
+	margin-left: -4px;
+}	
+.navbar .active a, .navbar .active a:hover, .navbar .active a:focus {
+	background: transparent !important;
+}
+.media
+{
+   display: table;
+   width: 100%;
+   table-layout: fixed;
+   border-collapse: collapse;
+}
+
+.media-row 
+{
+   display: table-row;
+   
+}
+
+.art-layout-cell
+{
+   display: table-cell;
+   vertical-align: top;
+}
+
+.layout-item-0 { padding: 5px;  }
+.ie7 .post .layout-cell {border:none !important; padding:0 !important; }
+.ie6 .post .layout-cell {border:none !important; padding:0 !important; }
+
+.recent{
+    padding-top:20px;
+    
+}
+.info-meta{
+    padding-top: 10px;
+    color:#9999;
+
+@media (min-width: 1200px){
+	.form-inline .input-group {
+		width: 300px;
+		margin-left: 30px;
+	}
+}
+@media (max-width: 1199px){
+	.form-inline {
+		display: block;
+		margin-bottom: 10px;
+	}
+	.input-group {
+		width: 100%;
+	}
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-xl navbar-light bg-light">
+	<a href="#" class="navbar-brand"><i class="fa fa-cube"></i>Si<b>Loker</b></a>
+	<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<!-- Collection of nav links, forms, and other content for toggling -->
+	<div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+		<div class="navbar-nav">
+			<a href="#" class="nav-item nav-link active ">Beranda</a>
+			<a href="lowongan_admin.html" class="nav-item nav-link">Lowongan</a>
+			<div class="nav-item dropdown">
+				<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Kelola</a>
+				<div class="dropdown-menu">
+					<a href="kelola_loker.html" class=" dropdown-item ">Edit Lowongan Kerja</a>
+					<a href="Kelola_mitra.html" class="dropdown-item font-weight-bold">Edit Mitra Kerja</a>
+					<a href="isi_berita.html" class="dropdown-item">Form Isi berita</a>
+					<a href="kelola_berita.html" class="dropdown-item">Daftar Berita</a>
+				</div>
+			</div>
+			<a href="daftar_berita.html" class="nav-item nav-link">Berita</a>
+		</div>
+		<form class="navbar-form form-inline">
+			<div class="input-group search-box">								
+				<input type="text"  class="form-control" placeholder="Search by Name">
+				<span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
+			</div>
+		</form>
+		<div class="navbar-nav ml-auto">
+			<div class="nav-item dropdown">
+				<a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="image/user.png" class="avatar" alt="Avatar"> admin <b class="caret"></b></a>
+				<div class="dropdown-menu">
+					<div class="dropdown-divider"></div>
+					<a href="#" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> <button onclick="runPopup()">Logout</button></a></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+	<div class="row pl-3" style="margin-top:-20px;width:100%;">
+		<div class="col-md-9" style="height:100%">
+			
+			<nav class="card mt-5 mb-2 col-md-12" > 
+			<h4 class="mt-4">
+				Tentang Siloker
+				<img src="image/Siloker.PNG" class="float-center" alt="Responsive image" >
+			</h4>
+
+			<p class="text-justify"style="line-height:20px;">Siloker merupakan website atau situs penyedia informasi mengenai lowongan kerja IT dengan beberapa kategori lowongan, yaitu; Programmer, Network & Infrastructure, Data Analyst, Data Science, UI/UX dan masih banyak lagi kategori IT-nya.
+				Siloker juga memeliki beragama fitur yang lengkap, mulai dari Informasi Lowongan, Membuat lowongan kerja, sampai menjadi mitra kami. Beberapa perusahaan besar hingga BUMN pun sudah menjadi mitra kami.
+			</p>
+			<hr/>
+		<div class="row  mt-3 ">	
+		<h4 class=" ml-3 mb-4">Berita Terbaru </h4>
+		<div class="media ml-3">
+					<div class="media-row">
+					<div class="art-layout-cell pr-3 layout-item-0" style="width: 50px;" >
+					<img width="150" height="160" alt="" src="image/berita1.jpg" style="padding-right:20px;padding-bottom:20px;float:left; font-size:120px;color: #3E3E3E;text-shadow: 2px 2px 5px #77ff7777;margin-top: 0px">
+						<h5 class="text-justify"><a style="color:black;" href="https://bisnis.tempo.co/read/1424118/susi-air-buka-lowongan-kerja-untuk-lulusan-sma-4-posisi-ditawarkan">Susi AIR Buka lowongan kerja untuk Lulusan SMA, 4 Posisi ditawarkan</a></h5>
+						<p class="text-justify"> Maskapai penerbangan Susi Air (PT ASI Pudjiastuti Aviation) me....</p>
+						
+					</div>
+					<div class="art-layout-cell pr-5 layout-item-0" style="width:10px;" >
+					<img width="150" height="160" alt="" src="image/berita2.jpg" style="padding-right:20px;padding-bottom:20px;float:left; font-size:120px;color: #3E3E3E;text-shadow: 2px 2px 5px #77ff7777;margin-top: 0px">
+						<h5 class="text-justify"><a style="color:black;" href="https://money.kompas.com/read/2020/06/26/071500726/lkpp-buka-lowongan-kerja-untuk-lulusan-d3-teknik-informatika">LKPP Buka Lowongan Kerja untuk Lulusan D3 Teknik Informatika	</a></h5>
+						<p>LKPP Buka Lowongan Kerja untuk Lulusan D3 Teknik Informatika ... </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 mt-5">
+			 <div class="panel panel-default">
+               <div class="panel-heading bg-light"><h5 class="text-center">Berita Terbaru</h5></div>
+               <div class="list-group-item">
+                    <div class="recent">
+						<a href="https://www.kompas.com/tren/read/2020/12/27/170500465/bank-mandiri-buka-lowongan-kerja-it-programming-berminat-?page=all">Bank Mandiri Buka Lowongan Kerja IT Programming, Berminat?</a><br></br>
+						<a href="https://www.cnbcindonesia.com/news/20201214074645-4-208805/lowongan-kerja-kang-emil-cari-banyak-sdm-di-sektor-digital">Lowongan Kerja! Kang Emil Cari Banyak SDM di Sektor Digital</a><br></br>
+						<a href="https://www.pikiran-rakyat.com/belia/pr-011285424/lowongan-kerja-januari-2021-pt-heinz-abc-indonesia-cari-lulusan-s1-semua-jurusan">Lowongan Kerja Januari 2021: PT Heinz ABC Indonesia Cari Lulusan S1 Semua Jurusan</a><br></br>
+						<a href="https://www.pikiran-rakyat.com/belia/pr-011280474/lowongan-kerja-bumn-januari-2021-pt-pegadaian-persero-cari-lulusan-s1">Lowongan Kerja BUMN Januari 2021: PT Pegadaian (Persero) Cari Lulusan S1</a><br>
+						<a href="#">Data science</a>
+					</p>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	
+</div>
+
+  </body>
+<footer>
+  <div class="footer static-bottom text-white mt-2" style="margin-top:10px;background-color:black;text-align:center;padding:10px 10px 0px 10px;width:100%;height:40px;">
+  	<p >Develop By Mahasiswa STT-NF @2021</p>
+	</div>
+</footer>
+  
+</html>
